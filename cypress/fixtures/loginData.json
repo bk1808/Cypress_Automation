@@ -1,0 +1,5 @@
+{
+    "_comment":"this object is to pass the values to spec files",
+    "enterusername":"admin",
+    "enterpassword":"admin"
+}
