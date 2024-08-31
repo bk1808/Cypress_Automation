@@ -12,6 +12,8 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           browser: chrome
+        # browser: firefox
+        # browser: edge
           headed: true
           command: npm run test:addToCart
         # env:
