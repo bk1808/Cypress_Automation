@@ -14,8 +14,7 @@ jobs:
           browser: chrome
           command: npm run runtest
           headed: true
-          env:
-          Url: 'https://naveenautomationlabs.com/opencart/index.php?route=account/login'
+          env: 'https://naveenautomationlabs.com/opencart/index.php?route=account/login'
 
       - name: Cypress Parallel Test Report for Login
         uses: actions/upload-artifact@v4
@@ -44,8 +43,7 @@ jobs:
           browser: chrome
           command: npm run test:registerFlow
           headed: true
-          env:
-          Url: 'https://naveenautomationlabs.com/opencart/index.php?route=common/home'
+          env: 'https://naveenautomationlabs.com/opencart/index.php?route=common/home'
 
       - name: Cypress Parallel Test Report for Add to cart
         uses: actions/upload-artifact@v4
@@ -67,8 +65,7 @@ jobs:
           browser: chrome
           command: npm run test:addToCart
           headed: true
-          env:
-          Url: 'https://naveenautomationlabs.com/opencart/index.php?route=account/login'
+          env: 'https://naveenautomationlabs.com/opencart/index.php?route=account/login'
 
       - name: Cypress Parallel Test Report for Add to cart
         uses: actions/upload-artifact@v4
