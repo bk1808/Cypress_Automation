@@ -20,3 +20,14 @@ jobs:
         # spec: cypress/e2e/spec1.cy.js
         # To run a whole project
         # project: ./some/nested/folder
+      - name: Slack Notification
+        uses: rtCamp/action-slack-notify@v2
+        env:
+        # SLACK_CHANNEL: general
+          SLACK_COLOR: ${{ job.status }} # or a specific color like 'good' or '#ff00ff'
+          SLACK_ICON: https://github.com/rtCamp.png?size=48
+          SLACK_MESSAGE: 'Test automation report https://github.com/bk1808/Cypress_Automation/actions/runs/{{github.run_id}}'
+          SLACK_TITLE: Cypress e2e test
+        # SLACK_USERNAME: rtCamp
+        # slack webhook is for the interaction bw slack and webhook
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
