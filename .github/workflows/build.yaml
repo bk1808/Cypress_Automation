@@ -13,7 +13,8 @@ jobs:
         with:
           browser: chrome
           headed: true
-        # env:
+          env:
+          CYPRESS_BASE_URL: 'https://naveenautomationlabs.com/opencart/index.php?route=account/login'
         #  CYPRESS_host: api.dev.local
         #  CYPRESS_port: 4222
         # Below line is to execute specific 'spec' file
