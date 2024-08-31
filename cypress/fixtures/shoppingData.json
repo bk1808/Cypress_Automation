@@ -1,0 +1,16 @@
+{
+
+"logindata": {
+    "username":"test@testmail.com",
+    "password":"Abc123"
+},
+
+"product": {
+    "searchProduct":"MacBook"
+},
+
+"message": {
+    "successMessage":" Success: You have added MacBook to your shopping cart! "
+}
+
+}
