@@ -6,10 +6,10 @@ const loginObj = new loginPOM();//create an object for login page POM class usin
 describe('Login to vTiger Application', () => {
   it('Login to application with valid credentials', () => {
     
-    loginObj.openURL()
+    loginObj.openUrl()
     loginObj.enterUsername(loginData.enterusername)//read the test data from fixtures folder
     loginObj.enterPassword(loginData.enterpassword)
     loginObj.clickLoginBtn()
-    
+        
   });
 });

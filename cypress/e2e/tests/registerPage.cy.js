@@ -6,7 +6,7 @@ const registration = new registerPOM();
 describe('Complete Registration', () => {
   it('Register to Naveen Automation Labs', () => {
     
-    registration.openURL()
+    registration.openUrl()
     registration.enterFirstName(registerData.firstname)
     registration.enterLastName(registerData.lastname)
     registration.enterEmail(registerData.email)

@@ -14,9 +14,9 @@ export class registerPOM{
         continueBtn:"input[type='submit']"
     }
 
-    openURL(){
+    openUrl(){
 
-        cy.visit(Cypress.env('EcomURL'))
+        cy.visit(Cypress.env('EcomUrl'))
 
     }
 

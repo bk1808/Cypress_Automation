@@ -4,6 +4,7 @@ const { defineConfig } = require('cypress')
 const fs = require('fs')
 
 module.exports = defineConfig({
+  projectId: "yk4c2q",
   reporter: 'cypress-mochawesome-reporter',
   video: true,
   videoCompression: true,
@@ -37,7 +38,7 @@ module.exports = defineConfig({
   },
   
   env: {
-    URL: "http://localhost:8888/index.php?action=index&module=Home", // for vTiger
-    EcomURL: "https://naveenautomationlabs.com/opencart/index.php?route=account/register"
+    Url: "http://localhost:8888/index.php?action=index&module=Home", // for vTiger
+    EcomUrl: "https://naveenautomationlabs.com/opencart/index.php?route=account/register"
   }
 });

@@ -11,8 +11,9 @@ lpLocators={
 
     //Step-2: Navigate to Login page using URL
 
-    openURL(){
-    cy.visit(Cypress.env('URL')) //we'll read the URL through cypress.config.js file by calling the key 'URL'
+    openUrl(){
+    cy.visit(Cypress.env('Url')) //we'll read the URL through cypress.config.js file by calling the key 'URL'
+    cy.wait(3000)
     }
     
     //Step-3: Create methods for all the above locators
