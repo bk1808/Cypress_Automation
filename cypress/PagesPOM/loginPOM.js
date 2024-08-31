@@ -3,9 +3,9 @@ export class loginPOM{
    
 lpLocators={
 
-    username: "input[name='user_name']",
-    password: "input[name='user_password']",
-    lgbtn:"input#submitButton"
+    username: "#input-email",
+    password: "#input-password",
+    lgbtn:"input.btn.btn-primary"
 
     }
 

@@ -3,7 +3,7 @@ import loginData from "../../fixtures/loginData";
 
 const loginObj = new loginPOM();//create an object for login page POM class using 'new' keyword
 
-describe('Login to vTiger Application', () => {
+describe('Login to Application', () => {
   it('Login to application with valid credentials', () => {
     
     loginObj.openUrl()

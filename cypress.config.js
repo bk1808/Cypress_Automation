@@ -38,7 +38,7 @@ module.exports = defineConfig({
   },
   
   env: {
-    Url: "http://localhost:8888/index.php?action=index&module=Home", // for vTiger
+    Url: "https://naveenautomationlabs.com/opencart/index.php?route=account/login", // for vTiger
     EcomUrl: "https://naveenautomationlabs.com/opencart/index.php?route=account/register"
   }
 });
