@@ -31,3 +31,9 @@ jobs:
         # SLACK_USERNAME: rtCamp
         # slack webhook is for the interaction bw slack and webhook
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+      # To generate the report in CI/CD pipeline 
+      - name: Cypress Test Report
+        uses: actions/upload-artifact@v4
+        with:
+            name: MOchawesome HTML report
+            path: cypress/reports/html # or path/to/artifact
