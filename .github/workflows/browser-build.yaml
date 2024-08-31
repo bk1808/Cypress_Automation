@@ -1,0 +1,23 @@
+name: Browser test build
+on: push
+jobs:
+  cypress-run:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      # Install npm dependencies, cache them correctly
+      # and run all Cypress tests
+      - name: Cypress run
+        uses: cypress-io/github-action@v6
+        with:
+          browser: chrome
+          headed: true
+          env:
+          Url: 'https://naveenautomationlabs.com/opencart/index.php?route=account/login'
+        #  CYPRESS_host: api.dev.local
+        #  CYPRESS_port: 4222
+        # Below line is to execute specific 'spec' file
+        # spec: cypress/e2e/spec1.cy.js
+        # To run a whole project
+        # project: ./some/nested/folder
