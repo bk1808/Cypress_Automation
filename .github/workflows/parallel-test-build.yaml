@@ -12,10 +12,17 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           browser: chrome
-          command: npm run test:addToCart
+          command: npm run runtest
           headed: true
           env:
           Url: 'https://naveenautomationlabs.com/opencart/index.php?route=account/login'
+
+      - name: Cypress Parallel Test Report for Login
+        uses: actions/upload-artifact@v4
+        with:
+             name: MOchawesome HTML report for Login
+             path: cypress/reports/html # or path/to/artifact
+
 
         #  CYPRESS_host: api.dev.local
         #  CYPRESS_port: 4222
@@ -39,6 +46,13 @@ jobs:
           headed: true
           env:
           Url: 'https://naveenautomationlabs.com/opencart/index.php?route=common/home'
+
+      - name: Cypress Parallel Test Report for Add to cart
+        uses: actions/upload-artifact@v4
+        with:
+             name: MOchawesome HTML report for registration flow
+             path: cypress/reports/html # or path/to/artifact
+
   
   add-cart-run:
     runs-on: ubuntu-22.04
@@ -55,3 +69,9 @@ jobs:
           headed: true
           env:
           Url: 'https://naveenautomationlabs.com/opencart/index.php?route=account/login'
+
+      - name: Cypress Parallel Test Report for Add to cart
+        uses: actions/upload-artifact@v4
+        with:
+             name: MOchawesome HTML report for add to cart
+             path: cypress/reports/html # or path/to/artifact
