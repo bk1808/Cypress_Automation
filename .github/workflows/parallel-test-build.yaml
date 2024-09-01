@@ -12,7 +12,7 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           browser: chrome
-          command: npm run runtest
+          command: npm run test:runtest
           headed: true
           env: 'https://naveenautomationlabs.com/opencart/index.php?route=account/login'
 
