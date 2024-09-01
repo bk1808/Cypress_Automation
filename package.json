@@ -6,6 +6,7 @@
   "scripts": {
     "test": "node_modules\\.bin\\cypress run --config pageLoadTimeout=100000",
     "runtest": "npm run test --",
+    "test:runtest": "npx cypress run node_modules\\.bin\\cypress\\e2e\tests --config pageLoadTimeout=100000",
     "test:addToCart": "npx cypress run cypress\\e2e\tests\\addToCart.cy.js",
     "test:registerFlow": "npx cypress run cypress\\e2e\tests\\registerPage.cy.js"
   },
